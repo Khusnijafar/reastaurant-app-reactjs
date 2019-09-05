@@ -1,0 +1,18 @@
+.app {
+    /* height: 150vh;
+    background: #eee; */
+    padding: 1em;
+}
+.list {
+    flex-direction: row;
+    transition: 0.7;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px DarkCyan;
+    margin-bottom: 30px; 
+    margin-right: 20px;
+}
+
+.button-add {
+    margin-top: 100px;
+    margin-left: 420px;
+}
