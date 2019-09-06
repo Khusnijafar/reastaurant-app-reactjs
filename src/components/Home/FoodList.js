@@ -31,7 +31,9 @@ class FoodList extends Component {
             id_item: id_item,
             id_user: this.props.id_user
         }))
-        window.location.reload('/')
+        .then(() => {
+            window.location.reload('/')
+        })    
     }
 
     handleRefresh = (id_item) => {
