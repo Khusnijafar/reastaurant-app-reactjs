@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://localhost:3030/item'
+const url = 'https://restaurant-app-12.herokuapp.com/item'
 
 export const getItem = () => {
     return {

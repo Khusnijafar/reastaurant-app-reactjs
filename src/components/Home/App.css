@@ -16,3 +16,55 @@
     margin-top: 100px;
     margin-left: 420px;
 }
+
+.img {
+    opacity: 0.2;
+
+}
+
+.container-cart{
+    height: 550px;
+    overflow: auto;
+    padding: 15px;
+}
+
+.empty img{
+    width: 250px;
+    margin-left: 50px;
+/* margin-right: auto; */
+}
+.empty{
+    width: 100%;
+}
+.empty h3{
+    margin-top: -30px;
+    text-align: center;
+}
+
+.display-none{
+    display: none;
+}
+
+.img-cart{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.img-cart img{
+    height: 100%;
+    width: 100%;
+}
+
+.btn-min{
+    background-color: rgba(129, 230, 82, 0.4);
+    color: green;
+    font-weight: bold;
+    width: 35px;
+}
+.btn-plus{
+    background-color: rgba(129, 230, 82, 0.4);
+    color: green;
+    font-weight: bold;
+}

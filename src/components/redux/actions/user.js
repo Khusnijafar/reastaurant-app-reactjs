@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://localhost:3030/users/'
+const url = 'https://restaurant-app-12.herokuapp.com/users/'
 
 export const login = (data) => {
     return {

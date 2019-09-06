@@ -68,7 +68,7 @@ export default class Register extends Component {
         }
         let headers = {'authorization':'khusni', 'Content-Type': 'application/json'} 
   
-        axios.post('http://localhost:3030/users/register', data, {headers})
+        axios.post('https://restaurant-app-12.herokuapp.com/users/register', data, {headers})
         .then(res => {
           console.log(res);
           this.props.history.push('/login')

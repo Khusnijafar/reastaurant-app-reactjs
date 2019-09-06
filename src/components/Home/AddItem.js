@@ -50,15 +50,15 @@ class AddItem extends Component {
           button: "oke",
         })
       })
-      .catch(
+      .catch(() => {
         swal({
           title: "Insert",
           text: "Insert Failed",
           icon: "danger",
           button: "oke",
         })
-      )
-      this.props.history.push('/')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      })     
+      window.location.reload()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }
 
   handleChange = (e) => {

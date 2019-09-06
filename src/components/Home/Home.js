@@ -5,7 +5,6 @@ import { Grid } from 'semantic-ui-react';
 import HeaderA from './Header'
 import LeftPanel from './LeftPanel';
 import RightPanel from './RightPanel';
-import Menu from './Menu'
 import './App.css'
 import FoodList from './FoodList';
 import AddItem from './AddItem'
@@ -26,9 +25,9 @@ class Home extends Component {
                                 <FoodList itemList={this.props.itemList} />
                                     <AddItem />
                             </Grid.Column>
-                            <Grid.Column width={5}>
+                            {/* <Grid.Column width={5}>
                                 <RightPanel />
-                            </Grid.Column>
+                            </Grid.Column> */}
                     </Grid>
             </div>
         )

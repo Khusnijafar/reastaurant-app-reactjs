@@ -50,7 +50,7 @@ const cart = (state = initialState, action) => {
                 isFulfilled: true,
                 isError: false,
                 cartList: action.payload.data.result,
-            }
+            }        
         default:
             return state
     }

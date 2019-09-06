@@ -1,32 +1,29 @@
 import React from "react";
 import { Segment, Accordion, Header, Icon } from "semantic-ui-react";
+import { connect } from 'react-redux'
+import { getCart } from '../redux/actions/cart'
 
-class MetaPanel extends React.Component {
+class RightPanel extends React.Component {
   state = {
 
   };
 
-//   setActiveIndex = (event, titleProps) => {
-//     const { index } = titleProps;
-//     const { activeIndex } = this.state;
-//     const newIndex = activeIndex === index ? -1 : index;
-//     this.setState({ activeIndex: newIndex });
-//   };
-
   render() {
-    const { activeIndex, privateChannel } = this.state;
-
-    if (privateChannel) return null;
-
     return (
       <Segment>
         <Header as="h3" attached="top" textAlign='center'>
           Cart
         </Header>
-            
+        {/* <div>
+          {(this.props.cart.length === 0) ?
+           <div className='empty'>
+             <img src={require('../../images/utensils.jpg')} alt='w'/>
+           </div> : 
+            <div></div>}
+        </div> */}
       </Segment>
     );
   }
 }
 
-export default MetaPanel;
+export default RightPanel;

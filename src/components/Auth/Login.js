@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Form, Segment, Button, Header, Message, Icon } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import swal from 'sweetalert';
 import { login } from '../redux/actions/user'
 import { connect } from 'react-redux'
@@ -11,6 +11,7 @@ class Login extends Component {
         this.state = {
             email: '',
             password: '',
+            loading: true
         }
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handlePasswordChange = this.handlePasswordChange.bind(this)
@@ -35,7 +36,7 @@ class Login extends Component {
                 localStorage.setItem('token', response.action.payload.data.result.token)
                 localStorage.setItem('id_user', response.action.payload.data.result.id_user)
                 localStorage.setItem('username', response.action.payload.data.result.username)
-                // window.location.reload()
+                // window.location.redirect('/')
             })
             .catch((response) => {
                 swal({
@@ -50,6 +51,9 @@ class Login extends Component {
     
     render() {
         const { email, password } = this.state
+        // if(this.state.email = password) {
+        //     return <Redirect to='/' />
+        // }
         return (
             <Grid textAlign='center' verticalAlign='middle' className='app'>
                 <Grid.Column style={{ maxWidth: 450, paddingTop: 150}}>
